@@ -4,7 +4,8 @@ export default function Home() {
       <div className="z-10 max-w-5xl w-full items-center justify-center font-mono text-sm lg:flex">
         <h1 className="text-4xl font-bold text-center">
           Hello
-          <form name="new-contact" netlify>
+          <form name="new-contact" data-netlify="true">
+            <input type="hidden" name="form-name" value="new-contact" />
             <p>
                 <label>Name <input type="text" name="name" /></label>
             </p>
