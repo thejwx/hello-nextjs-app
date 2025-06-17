@@ -7,9 +7,9 @@ export default function Home() {
         </h1>
         <form
             name="my-new-contact" data-netlify="true" netlify-honeypot="bot-field" 
-            action="/thank-you"
+            action="/api/contact"  // This is the API route that handles the form submission
             method="POST">
-            <input type="hidden" name="form-name" value="my-new-contacts" />
+            <input type="hidden" name="form-name" value="my-new-contact" />
             <input type="hidden" name="bot-field" />
             <p>
               <label>Name <input type="text" name="name" required /></label>
