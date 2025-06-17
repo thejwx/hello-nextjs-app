@@ -7,12 +7,8 @@ export default function Home() {
         </h1>
         <form
             name="my-new-contact"
-            data-netlify="true"
-            data-netlify-redirect="/thank-you"
-            netlify-honeypot="bot-field"
+            action="/api/contact"
             method="POST">
-            <input type="hidden" name="form-name" value="my-new-contact" />
-            <input type="hidden" name="bot-field" />
             <p>
               <label>Name <input type="text" name="name" required /></label>
             </p>
