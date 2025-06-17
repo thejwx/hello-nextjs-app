@@ -5,11 +5,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-center">
           Hello
         </h1>
-        <form name="new-contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you">
-          <input type="hidden" name="form-name" value="new-contact" />
-          <p style={{ display: 'none' }}>
-            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-          </p>
+        <form name="new-contact" method="POST" action="/api/contact">
           <p>
               <label>Name <input type="text" name="name" required /></label>
           </p>
