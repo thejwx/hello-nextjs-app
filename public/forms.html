@@ -5,7 +5,8 @@
 </head>
 <body>
     <!-- This file is used by Netlify to detect forms during build -->
-    <form name="new-contact" netlify netlify-honeypot="bot-field" hidden>
+    <form name="new-contact" method="POST" action="/" netlify netlify-honeypot="bot-field" hidden>
+        <input name="bot-field" />
         <input type="text" name="name" />
         <input type="email" name="email" />
     </form>

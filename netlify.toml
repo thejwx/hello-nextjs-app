@@ -7,9 +7,3 @@
 
 [build.environment]
   NEXT_PRIVATE_TARGET = "server"
-
-# Form handling configuration
-[[redirects]]
-  from = "/*"
-  to = "/404"
-  status = 404
