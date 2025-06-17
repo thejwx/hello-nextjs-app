@@ -34,6 +34,35 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `postcss.config.js` - PostCSS configuration
 - `next.config.js` - Next.js configuration
 
+## Push to GitHub
+
+This project includes convenient scripts to automatically push changes to GitHub:
+
+### Option 1: Using the shell script (Mac/Linux)
+```bash
+./push-to-github.sh "Your commit message"
+```
+
+### Option 2: Using the batch file (Windows)
+```cmd
+push-to-github.bat "Your commit message"
+```
+
+### Option 3: Using npm script (All platforms)
+```bash
+npm run push "Your commit message"
+```
+
+If no commit message is provided, it will use "Update project files" as the default message.
+
+The scripts will:
+- Check for changes
+- Add all modified files
+- Show what will be committed
+- Commit with your message
+- Push to GitHub
+- Provide colored output with status updates
+
 ## Deploy
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
