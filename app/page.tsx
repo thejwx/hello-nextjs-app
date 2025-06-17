@@ -6,7 +6,7 @@ export default function Home() {
           Hello
         </h1>
         <form 
-            action="/thank-you"
+            action="/thank-you/"
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
