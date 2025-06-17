@@ -12,6 +12,7 @@ export default function Home() {
             data-netlify-honeypot="bot-field"
             name="my-contacts">
           <input type="hidden" name="form-name" value="my-contacts" />
+          <input type="hidden" name="bot-field" />
           <p>
               <label>Name <input type="text" name="name" required /></label>
           </p>
