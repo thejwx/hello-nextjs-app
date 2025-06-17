@@ -5,23 +5,21 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-center">
           Hello!
         </h1>
-        <form 
-            action="/thank-you/"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            name="my-contacts">
-          <input type="hidden" name="form-name" value="my-contacts" />
-          <input type="hidden" name="bot-field" />
-          <p>
+        <form
+            name="my-contact" data-netlify="true" netlify-honeypot="bot-field" 
+            action="/api/contact"
+            method="POST">
+            <input type="hidden" name="form-name" value="my-contacts" />
+            <input type="hidden" name="bot-field" />
+            <p>
               <label>Name <input type="text" name="name" required /></label>
-          </p>
-          <p>
+            </p>
+            <p>
               <label>Email <input type="email" name="email" required /></label>
-          </p>
-          <p>
+            </p>
+            <p>
               <input type="submit" value="Submit"/>
-          </p>
+            </p>
         </form>
       </div>
     </main>
