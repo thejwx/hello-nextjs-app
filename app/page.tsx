@@ -8,8 +8,8 @@ export default function Home() {
         <form
             name="my-new-contact"
             data-netlify="true"
+            data-netlify-redirect="/thank-you"
             netlify-honeypot="bot-field"
-            action="/thank-you"
             method="POST">
             <input type="hidden" name="form-name" value="my-new-contact" />
             <input type="hidden" name="bot-field" />
