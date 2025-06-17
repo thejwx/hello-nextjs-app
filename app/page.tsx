@@ -5,7 +5,13 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-center">
           Hello
         </h1>
-        <form name="new-contact" method="POST" action="/api/contact">
+        <form 
+            action="/thank-you"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            name="my-contacts">
+          <input type="hidden" name="form-name" value="my-contacts" />
           <p>
               <label>Name <input type="text" name="name" required /></label>
           </p>
@@ -13,7 +19,7 @@ export default function Home() {
               <label>Email <input type="email" name="email" required /></label>
           </p>
           <p>
-              <button type="submit">Send</button>
+              <input type="submit" value="Submit"/>
           </p>
         </form>
       </div>

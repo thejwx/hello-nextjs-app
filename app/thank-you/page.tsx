@@ -6,7 +6,7 @@ export default function ThankYou() {
           Thank You!
         </h1>
         <p className="mt-4 text-center">
-          Your message has been submitted successfully.
+          Your message has been submitted successfully!
         </p>
       </div>
     </main>
