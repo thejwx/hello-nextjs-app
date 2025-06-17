@@ -6,10 +6,10 @@ export default function Home() {
           Hello!
         </h1>
         <form
-            name="my-contact" data-netlify="true" netlify-honeypot="bot-field" 
-            action="/api/contact"
+            name="my-new-contact" data-netlify="true" netlify-honeypot="bot-field" 
+            action="/thank-you"
             method="POST">
-            <input type="hidden" name="form-name" value="my-contacts" />
+            <input type="hidden" name="form-name" value="my-new-contacts" />
             <input type="hidden" name="bot-field" />
             <p>
               <label>Name <input type="text" name="name" required /></label>
